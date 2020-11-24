@@ -14,7 +14,7 @@
     <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
     <script async src="https://cdn.ampproject.org/v0.js"></script>
     <title>Salgados Para Festas e Eventos | LV Fest</title>
-    <link rel="icon" type="image/png" href="img/coxinha_sf.png" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <style amp-custom>
         * {
             margin: 0;
@@ -86,11 +86,10 @@
             background-repeat: no-repeat;
             background-position: center;
             background-attachment: fixed;
-            border: solid 1px #edf2f4;
         }
         #BV {
             margin-top: 10%;
-            margin-bottom: 10%;
+            margin-bottom: 5%;
             margin-left: 10%;
             text-align: center;
             padding-top: 3%;
@@ -149,6 +148,76 @@
             right: 20px;
             bottom: 20px;
             border-radius: 7px;  
+            box-shadow: 3px 3px 1px rgb(31, 31, 31);
+        }
+        .produtos {
+            background-image: url(img/tabua.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            padding-top: 50px;
+            padding-bottom: 7%;
+            
+        }
+        .prod1 {
+            display: flex;;
+            justify-content: center;
+        }
+        .prod2 {
+            display: flex;
+            margin-top: 60px;
+            justify-content: center;
+        }
+        .produto {   
+            text-align: center;
+        }
+        .img_prod {
+            border-radius: 4px;
+        }
+        .desc_prod {
+            margin-top: 10px;
+            margin-left: 5px;
+            margin-right: 5px;  
+            color:#edf2f4;
+            font-size: 20px; 
+        }
+        .title-prod {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            font-family: galada;
+            color:#edf2f4;
+            font-size: 40px;
+            font-weight: 200;
+            text-decoration: underline;
+        }
+        .barra_separadora {
+            margin-left: 5%;
+            margin-right: 5%;
+            margin-bottom: 5%;
+        }
+        #btnprod {
+            text-align: center;
+            margin-top: 100px;
+        }
+        .preco_prod {
+            margin-top: 10px;
+            margin-left: 5px;
+            margin-right: 5px;  
+            color:#edf2f4;
+            font-size: 16px; 
+        }
+        .preco_prod strong {
+            font-size: 30px; 
+        }
+        .dvcontato {
+            background-image: url(img/katchup.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            border: 1px solid #edf2f4;
+            
         }
     </style>
 </head>
@@ -160,7 +229,7 @@
             <li><a href="">Sobre Nós</a></li>
             <li><a href="" class="contato">Contato</a></li>
         </ul>
-        <a href="index.html"><amp-img width="150" height="141" src="img/logo_sf.png"  id='logo'></a>
+        <a href="index.amp.html"><amp-img width="150" height="141" src="img/logo_sf.png"  id='logo'></a>
     </div>
     <div class="main">
         <h2 class="lv">LVFest</h2>
@@ -177,7 +246,7 @@
             <br>
             <p class="btnsobre"><a href="">SOBRE NÓS</a></p>
             <br>
-            <p id="texto" style="padding-right: 2%;">
+            <p id="texto">
                 Utilizamos ingredientes selecionados
                 de qualidade, fazendo com que nosso 
                 empanado seja mais crocante, 
@@ -190,7 +259,68 @@
               height="351"
               alt="coxinha">
             </amp-img>
-            
+        </div>
+    </div>
+    <div class="produtos">
+        <hr class="barra_separadora">
+        
+        <h2 id="titulo2" style="font-size: 46px;padding-top: 34px;padding-bottom: 5%;color: #ef233c;text-align: center;">Conheça nossos produtos!</h2>
+        <div class="prod1">
+            <div class="produto" style="margin-right: 10%;">
+                <h3 class="title-prod">Coxinha</h3>
+                <amp-img src="img/coxinha_prod.jpg"
+                class="img_prod"
+                width="200"
+                height="200"
+                alt="Coxinha">
+                </amp-img>
+                <p class="desc_prod">As clássicas e deliciosas coxinhas <br> com um sabor e um tempero inigualável!</p>
+                <p class="preco_prod"><strong>R$40,00</strong> cto</p>
+            </div>
+            <div class="produto">
+                <h3 class="title-prod">Bolinho de Queijo</h3>
+                <amp-img src="img/bolinho_queijo_prod.jpg"
+                class="img_prod"
+                width="200"
+                height="200"
+                alt="Coxinha">
+                </amp-img>
+                <p class="desc_prod">Bolinhos de queijo são irresistíveis não é?!<br>Com um delicioso queijo mussarela esperando por você!</p>
+                <p class="preco_prod"><strong>R$40,00</strong> cto</p>
+            </div>
+        </div>
+        <div class="prod2">
+            <div class="produto" style="margin-right: 10%;">
+                <h3 class="title-prod">Croquete de Carne</h3>
+                <amp-img src="img/croquete_prod.jpg"
+                class="img_prod"
+                width="200"
+                height="200"
+                alt="Coxinha">
+                </amp-img>
+                <p class="desc_prod">Os Croquetes com recheio de carne moída <br> eles vão dominar a sua festa! </p>
+                <p class="preco_prod"><strong>R$40,00</strong> cto</p>
+            </div>
+            <div class="produto">
+                <h3 class="title-prod">Risoles de Presunto e Queijo</h3>
+                <amp-img src="img/risole_c_prod.jpeg"
+                class="img_prod"
+                width="200"
+                height="200"
+                alt="Coxinha">
+                </amp-img>
+                <p class="desc_prod">Risoles quentinhos com presunto e queijo de qualidade <br> esperando por você!</p>
+                <p class="preco_prod"><strong>R$40,00</strong> cto</p>
+            </div>
+        </div>
+        <p class="btnsobre" id="btnprod"><a href="">Conheça todos nossos produtos!</a></p>
+    </div>
+    <div class="dvcontato">
+        <div id="texto2">
+            <img id="telefone" src="img/ligar.png">
+            <h2 id="titulo2" style="font-size: 46px;padding-top: 34px;color: #ef233c;">Peça já o seu Delivery!</h2>
+            <p id="texto">Entre em Contato através de nossos meios de Comunicação e faça já seu pedido!</p>
+            <p class="btnsobre" id="btnprod"><a href="">Entre em Contato!</a></p>
         </div>
     </div>
     <amp-social-share 
