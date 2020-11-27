@@ -158,7 +158,6 @@
             background-attachment: fixed;
             padding-top: 50px;
             padding-bottom: 7%;
-            
         }
         .prod1 {
             display: flex;;
@@ -198,7 +197,7 @@
         }
         #btnprod {
             text-align: center;
-            margin-top: 100px;
+            margin-top: 70px;
         }
         .preco_prod {
             margin-top: 10px;
@@ -214,10 +213,26 @@
             background-image: url(img/katchup.jpg);
             background-size: cover;
             background-repeat: no-repeat;
-            background-position: center;
+            background-position: left;
             background-attachment: fixed;
             border: 1px solid #edf2f4;
-            
+            padding-top: 100px;
+            padding-bottom: 100px;
+            text-align: center;
+            padding-left: 50%;
+        }
+        .rodape {
+            display: inline-flex;
+            text-align: center;
+            padding-top: 2%;
+            padding-left: 20%;
+            font-family: "Raleway";
+        }
+        .icon_face {
+            bottom: 17px;
+        }
+        .icon_insta {
+            bottom:8px
         }
     </style>
 </head>
@@ -283,7 +298,7 @@
                 class="img_prod"
                 width="200"
                 height="200"
-                alt="Coxinha">
+                alt="Bolinho de Queijo">
                 </amp-img>
                 <p class="desc_prod">Bolinhos de queijo são irresistíveis não é?!<br>Com um delicioso queijo mussarela esperando por você!</p>
                 <p class="preco_prod"><strong>R$40,00</strong> cto</p>
@@ -296,18 +311,18 @@
                 class="img_prod"
                 width="200"
                 height="200"
-                alt="Coxinha">
+                alt="Croquete de Carne">
                 </amp-img>
                 <p class="desc_prod">Os Croquetes com recheio de carne moída <br> eles vão dominar a sua festa! </p>
                 <p class="preco_prod"><strong>R$40,00</strong> cto</p>
             </div>
             <div class="produto">
                 <h3 class="title-prod">Risoles de Presunto e Queijo</h3>
-                <amp-img src="img/risole_c_prod.jpeg"
+                <amp-img src="img/risole_prod.jpeg"
                 class="img_prod"
                 width="200"
                 height="200"
-                alt="Coxinha">
+                alt="Risole">
                 </amp-img>
                 <p class="desc_prod">Risoles quentinhos com presunto e queijo de qualidade <br> esperando por você!</p>
                 <p class="preco_prod"><strong>R$40,00</strong> cto</p>
@@ -317,10 +332,18 @@
     </div>
     <div class="dvcontato">
         <div id="texto2">
-            <img id="telefone" src="img/ligar.png">
-            <h2 id="titulo2" style="font-size: 46px;padding-top: 34px;color: #ef233c;">Peça já o seu Delivery!</h2>
-            <p id="texto">Entre em Contato através de nossos meios de Comunicação e faça já seu pedido!</p>
+            <amp-img width="128" height="128" alt="Icone ligar" src="img/ligar.png"></amp-img>
+            <h2 id="titulo2" style="font-size: 46px;padding-top: 34px;color: #ef233c;">Faça já a sua Encomenda!</h2>
+            <p id="texto">Entre em Contato através de nossos<br> meios de Comunicação e faça já seu pedido!</p>
             <p class="btnsobre" id="btnprod"><a href="">Entre em Contato!</a></p>
+        </div>
+    </div>
+    <div class="rodape">
+        <p>Todos direitos Reservados | &copy; LV Fest</p>
+        <div style="display: flex;">
+            <p style="padding-left: 200px;">Siga-nos em nossas redes sociais: </p>
+            <a href="https://www.facebook.com/lvfestbuffet" target="_blank"><amp-img class="icon_face" height="48" width="48" alt="Facebook" src="img/Facebook.ico"></amp-img></a>
+            <a href="https://www.instagram.com/lvfest.salgados/" target="_blank"><amp-img class="icon_insta" src="img/Instagram.ico" width="30" height="30" alt="Instagram"></amp-img></a>      
         </div>
     </div>
     <amp-social-share 
