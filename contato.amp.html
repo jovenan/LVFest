@@ -13,8 +13,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Galada&display=swap" rel="stylesheet">
     <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
     <script async src="https://cdn.ampproject.org/v0.js"></script>
-    <title></title>
+    <title>Contato | LV Fest</title>
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <script async custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-0.2.js"></script>
+    <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
     <style amp-custom>
         * {
             margin: 0;
@@ -109,7 +111,8 @@
             padding-top: 100px;
             padding-bottom: 100px;
             text-align: center;
-            padding-left: 50%;
+            padding-left: 35%;
+            padding-right: 35%;
         }
         .rodape {
             display: inline-flex;
@@ -123,6 +126,30 @@
         }
         .icon_insta {
             bottom:8px
+        }
+        input {
+            margin-top: 3%;
+            margin-bottom: 3%;
+        }
+        textarea {
+            margin-top: 3%;
+            margin-bottom: 3%;
+        }
+        fieldset {
+            padding-top: 20px;
+            padding-bottom: 20px;
+            background-color: rgba(49, 49, 49, 0.575);
+            border: none;
+            border-radius: 30px;
+            color:#edf2f4;
+            font-weight: 400;
+            font-size: 20px;
+        }
+        .tituloSolicite {
+            font-family: "Galada";
+            font-weight: 300;
+            font-size: 40px;
+            color:#edf2f4;
         }
     </style>
 </head>
@@ -138,11 +165,58 @@
     </div>
 
     <div class="dvcontato">
-        <div id="texto2">
-            <amp-img width="128" height="128" alt="Icone ligar" src="img/ligar.png"></amp-img>
-            <h2 id="titulo2" style="font-size: 46px;padding-top: 34px;color: #ef233c;">Faça já a sua Encomenda!</h2>
-            <p id="texto">Entre em Contato através de nossos<br> meios de Comunicação e faça já seu pedido!</p>
-            <p class="btnsobre" id="btnprod"><a href="contato.amp.html">Entre em Contato!</a></p>
+        <div class="form">
+            <h1 class="tituloSolicite">Solicite seu Orçamento</h1>
+            <form method="post"
+              action-xhr="contato.php"
+              target="_top">
+              <fieldset>
+                <p>
+                    <label>
+                    <p><span>Nome Completo:</span></p>
+                    <input type="text"
+                        name="name"
+                        required>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                    <p><span>Email:</span></p>
+                    <input type="email"
+                        name="email"
+                        placeholder="Ex: someone@gmail.com"
+                        required>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <p><span>Telefone/Whatsapp:</span></p>
+                        <input type="number"
+                        name="Telefone"
+                        placeholder="Ex: (99) 99999-9999"
+                        required>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <p><span>Deixe aqui seu pedido:</span></p>
+                        <textarea name="orcamento" rows="10" cols="33" required></textarea>
+                    </label>
+                </p>
+                <input type="submit"
+                  value="Enviar">
+              </fieldset>
+              <div submit-success>
+                <template type="amp-mustache">
+                 Enviado com Sucesso!
+                </template>
+              </div>
+              <div submit-error>
+                <template type="amp-mustache">
+                  Falha no Envio!
+                </template>
+              </div>
+            </form>
         </div>
     </div>
     <div class="rodape">

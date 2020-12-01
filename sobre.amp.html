@@ -13,7 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Galada&display=swap" rel="stylesheet">
     <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
     <script async src="https://cdn.ampproject.org/v0.js"></script>
-    <title></title>
+    <title>Sobre Nós | LV Fest</title>
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <style amp-custom>
         * {
@@ -124,6 +124,44 @@
         .icon_insta {
             bottom:8px
         }
+        .sobre {
+            background-image: url(img/tabua.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: left;
+            background-attachment: fixed;
+            padding-top: 10%;
+            padding-bottom: 10%;
+            text-align: center;
+            font-size: 26px;
+            color: #edf2f4;
+            padding-left: 3%;
+            padding-right: 3%;
+        }
+        .titulosobre {
+            font-family: "galada";
+            font-size: 46px;
+            font-weight: 300;
+            padding-top: 5%;
+            color: #ef233c;
+        }
+        .duplo {
+            display: flex;
+            justify-content: center;
+        }
+        .texto1 {
+            padding-top: 3%;
+            line-height: 1.5;
+        }
+        .segundoq {
+            padding-left: 3%;
+        }
+        hr {
+            margin-left: 25%;
+            margin-right: 25%;
+            margin-top: 3%;
+            margin-bottom: 3%;
+        }
     </style>
 </head>
 <body>
@@ -136,7 +174,16 @@
         </ul>
         <a href="index.amp.html"><amp-img width="150" height="141" src="img/logo_sf.png"  id='logo'></a>
     </div>
-
+    <div class="sobre">
+        <div class="duplo">
+            <amp-img src="img/desenho_coxinha_sf.png" width="400" height="400" alt="Desenho de uma Coxinha"></amp-img>
+            <div class="segundoq">
+                <h1 class="titulosobre">Sobre Nós</h1>
+                <hr>
+                <p class="texto1">Lorem ipsum dolor, sit amet consectetur adipisicing elit.<br> Sunt soluta, sint repudiandae porro eius odio ipsa commodi magnam! Obcaecati libero expedita commodi <br>id atque nesciunt iste, cupiditate ex sunt assumenda!</p>
+            </div>
+        </div>
+    </div>
     <div class="dvcontato">
         <div id="texto2">
             <amp-img width="128" height="128" alt="Icone ligar" src="img/ligar.png"></amp-img>
