@@ -95,7 +95,8 @@
         #texto {
             font-size: 26px;
             color: #edf2f4;
-            padding-bottom: 3%  ;
+            padding-bottom: 5%  ;
+            padding-top: 3%  ;
         }
         #btnprod {
             text-align: center;
@@ -111,8 +112,10 @@
             padding-top: 100px;
             padding-bottom: 100px;
             text-align: center;
-            padding-left: 35%;
-            padding-right: 35%;
+            padding-left: 15%;
+            padding-right: 15%;
+            display: flex;
+            justify-content: center;
         }
         .rodape {
             display: inline-flex;
@@ -144,12 +147,61 @@
             color:#edf2f4;
             font-weight: 400;
             font-size: 20px;
+            padding-left: 50px;
+            padding-right: 50px;
         }
         .tituloSolicite {
             font-family: "Galada";
             font-weight: 300;
             font-size: 40px;
+            color:#ef233c;
+            text-shadow: #ff243e3a 2px 2px;
+        }
+        .tituloSolicite1 {
+            font-size: 20px;
+            font-family: "raleway";
+            font-weight: 300;
             color:#edf2f4;
+            padding-bottom: 5%;
+            line-height:1.5;
+        }
+        .box1 {
+            padding-right: 45px;
+            padding-left: 45px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            background-color: rgba(49, 49, 49, 0.575);
+            border-radius: 30px;
+        }
+        .form {
+            padding-right:10%;
+        }
+        input {
+            border: none;
+            border-bottom:solid 3px #edf2f4;
+            background-color:transparent;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            color: white;
+            padding-top: 10px;
+            font-size: 14px;
+            font-family: "raleway";
+            width: 200px;
+        }
+        textarea {
+            background-color:transparent;
+            color: white;
+            font-size: 14px;
+        }
+        .botaobtn {
+            background-color:white;
+            border-radius: 50px;
+            width: 100px;
+            color: black;
+            padding: 5px;
+            font-family: "raleway";
+            font-weight: 500;
+            box-shadow: black 1px 2px;
         }
     </style>
 </head>
@@ -157,13 +209,13 @@
     <div class="nav">
         <ul>
             <li><a href="index.amp.html">Início</a></li>
-            <li><a href="">Produtos</a></li>
+            <li><a href="produtos.amp.html">Produtos</a></li>
             <li><a href="sobre.amp.html">Sobre Nós</a></li>
             <li><a href="contato.amp.html" class="contato">Contato</a></li>
         </ul>
         <a href="index.amp.html"><amp-img width="150" height="141" src="img/logo_sf.png"  id='logo'></a>
     </div>
-
+    
     <div class="dvcontato">
         <div class="form">
             <h1 class="tituloSolicite">Solicite seu Orçamento</h1>
@@ -184,7 +236,7 @@
                     <p><span>Email:</span></p>
                     <input type="email"
                         name="email"
-                        placeholder="Ex: someone@gmail.com"
+                        placeholder="example@gmail.com"
                         required>
                     </label>
                 </p>
@@ -193,7 +245,7 @@
                         <p><span>Telefone/Whatsapp:</span></p>
                         <input type="number"
                         name="Telefone"
-                        placeholder="Ex: (99) 99999-9999"
+                        placeholder="(15) 9999-9999"
                         required>
                     </label>
                 </p>
@@ -204,6 +256,7 @@
                     </label>
                 </p>
                 <input type="submit"
+                  class="botaobtn"
                   value="Enviar">
               </fieldset>
               <div submit-success>
@@ -217,6 +270,17 @@
                 </template>
               </div>
             </form>
+        </div>
+        <div class="">
+            <h2 class="tituloSolicite">Horário de Funcionamento</h2>
+            <div class="box1">
+                <p id="texto">Atendemos das 08:00 as 18:00<br><br>De Segunda a Sabádo.</p>
+                <p id="texto">Entregamos em Sorocaba, Itu e Votorantim.</p>
+                <p class="tituloSolicite1">Fale Conosco Através de Nosso Telefone/Whatsapp e Faça já sua Encomenda!</p>
+                <p class="tituloSolicite1" style="font-size:36px">(15) 99710-3167</p>
+                <p style="color:#edf2f4;">Obs: Horários e datas diferentes à combinar.</p>
+            </div>
+            
         </div>
     </div>
     <div class="rodape">
