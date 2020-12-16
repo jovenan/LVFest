@@ -124,6 +124,66 @@
         .icon_insta {
             bottom:8px
         }
+        .produtos {
+            background-image: url(img/tabua.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            padding-top: 50px;
+            padding-bottom: 7%;
+        }
+        .prod1 {
+            display: flex;
+            justify-content: center;
+        }
+        .prod2 {
+            display: flex;
+            margin-top: 60px;
+            justify-content: center;
+        }
+        .produto {   
+            text-align: center;
+        }
+        .img_prod {
+            border-radius: 4px;
+        }
+        .desc_prod {
+            margin-top: 10px;
+            margin-left: 5px;
+            margin-right: 5px;  
+            color:#edf2f4;
+            font-size: 20px; 
+        }
+        .title-prod {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            font-family: galada;
+            color:#edf2f4;
+            text-shadow: #edf2f43a 2px 2px;
+            font-size: 40px;
+            font-weight: 200;
+            text-decoration: underline;
+        }
+        .barra_separadora {
+            margin-left: 5%;
+            margin-right: 5%;
+            margin-bottom: 5%;
+        }
+        #btnprod {
+            text-align: center;
+            margin-top: 70px;
+        }
+        .preco_prod {
+            margin-top: 10px;
+            margin-left: 5px;
+            margin-right: 5px;  
+            color:#edf2f4;
+            font-size: 16px; 
+        }
+        .preco_prod strong {
+            font-size: 30px; 
+        }
     </style>
 </head>
 <body>
@@ -136,7 +196,57 @@
         </ul>
         <a href="index.amp.html"><amp-img width="150" height="141" src="img/logo_sf.png"  id='logo'></a>
     </div>
-
+    <div class="produtos">
+        <h2 id="titulo2" style="text-shadow: #ff243e3a 2px 2px;font-size: 46px;padding-top: 34px;padding-bottom: 5%;color: #ef233c;text-align: center;">Conheça nossos produtos!</h2>
+        <div class="prod1">
+            <div class="produto" style="margin-right: 10%;">
+                <h3 class="title-prod">Coxinha</h3>
+                <amp-img src="img/coxinha_prod.jpg"
+                class="img_prod"
+                width="200"
+                height="200"
+                alt="Coxinha">
+                </amp-img>
+                <p class="desc_prod">As clássicas e deliciosas coxinhas <br> com um sabor e um tempero inigualável!</p>
+                <p class="preco_prod"><strong>R$40,00</strong> cto</p>
+            </div>
+            <div class="produto">
+                <h3 class="title-prod">Bolinho de Queijo</h3>
+                <amp-img src="img/bolinho_queijo_prod.jpg"
+                class="img_prod"
+                width="200"
+                height="200"
+                alt="Bolinho de Queijo">
+                </amp-img>
+                <p class="desc_prod">Bolinhos de queijo são irresistíveis não é?!<br>Com um delicioso queijo mussarela esperando por você!</p>
+                <p class="preco_prod"><strong>R$40,00</strong> cto</p>
+            </div>
+        </div>
+        <div class="prod2">
+            <div class="produto" style="margin-right: 10%;">
+                <h3 class="title-prod">Croquete de Carne</h3>
+                <amp-img src="img/croquete_prod.jpg"
+                class="img_prod"
+                width="200"
+                height="200"
+                alt="Croquete de Carne">
+                </amp-img>
+                <p class="desc_prod">Os Croquetes com recheio de carne moída <br> eles vão dominar a sua festa! </p>
+                <p class="preco_prod"><strong>R$40,00</strong> cto</p>
+            </div>
+            <div class="produto">
+                <h3 class="title-prod">Risoles de Presunto e Queijo</h3>
+                <amp-img src="img/risole_prod.jpeg"
+                class="img_prod"
+                width="200"
+                height="200"
+                alt="Risole">
+                </amp-img>
+                <p class="desc_prod">Risoles quentinhos com presunto e queijo de qualidade <br> esperando por você!</p>
+                <p class="preco_prod"><strong>R$40,00</strong> cto</p>
+            </div>
+        </div>
+    </div>
     <div class="dvcontato">
         <div id="texto2">
             <amp-img width="128" height="128" alt="Icone ligar" src="img/ligar.png"></amp-img>
