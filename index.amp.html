@@ -43,9 +43,6 @@
         .nav ul li a:hover {
             color: #ef233c;
         }
-        .nav ul {
-            margin-right: 35%;
-        }
         #logo {
             position: absolute;
             margin-top: -95px;
@@ -235,11 +232,154 @@
         .icon_insta {
             bottom:8px
         }
+        /*parte nova*/
+        @media screen and (max-width: 900px) {
+            .menu-desk {
+                display: none;
+            }
+            .nav {
+                margin-top: 10px;
+                
+            }
+            .menu_on {
+                display: block !important;
+                padding-left: 10%;
+                z-index: 6;
+            }
+            .nav ul {
+                margin-right:0;
+            }
+        }
+        .menu_mobile {
+            font-size: 26px;
+            list-style: none;
+            display: block;
+            padding-top: 30px;
+            padding-right: 10px;
+            padding-left: 10px;
+        }
+        
+        .menu_mobile li {
+            padding-right: 13px !important;
+            padding-bottom: 15px;
+        }
+        .fundo_menu{
+            border-right: solid 1px #969696;
+            background-color:#edf2f4;
+            padding-bottom: 100%;
+            display: none;
+            position: fixed;
+            z-index: 2;
+            top: 0;
+        }
+        #menu-hamburguer:checked ~ .fundo_menu {
+            display: block;
+        }
+        .menu_on {
+            display: none;
+        }
+        .menu_de_dentro {
+            padding-top:60px ;
+            padding-left: 45px;
+        }
+        .menu_hr {
+            margin-bottom: 10px;
+        }
+        .produto1 {
+            margin-right:3%
+        }
+        @media screen and (max-width: 600px) { 
+            .rodape div p{
+                padding-left: 0 !important;
+            }
+            .main {
+                padding-left: 3%;
+                padding-right: 3%;
+                padding-top: 40%;
+                padding-bottom: 40%;
+            }
+            #logo {
+                margin-left: 50%;
+            }
+            .produtos {
+                padding-left: 2%;
+                padding-right: 2%;
+            }
+        }
+        @media screen and (max-width: 1025px) {
+            .LP {
+                display: block !important;
+            }
+            #BV {
+                margin-left: 0;
+                margin-top: 0;
+                padding-right: 10%;
+                padding-left: 10%;
+                padding-top: 20%;
+            }
+            
+            #texto {
+                font-size: 20px;
+            }
+            .btnsobre a {
+                font-size: 20px;
+            }
+            .lv2 {
+                font-size: 30px;
+            }
+            .coxinha {
+                margin: 0;
+                padding-top: 0;
+                text-align: center;
+            }
+            .prod1 {
+                display: block;
+                margin: 0 !important;   
+            }
+            .prod2 {
+                display: block;
+                margin: 0 !important;
+            }
+            .produto {
+                margin-top:10%
+            }
+            .dvcontato {
+                padding-left: 0;
+            }
+            .rodape {
+                padding-left: 2% !important;
+                display: block;
+            }
+            .rodape div{
+                padding-top: 15px;
+            }
+            .whatsapp {
+                right: 20px;
+                bottom: 80px;   
+            }
+            
+        }
     </style>
 </head>
 <body>
     <div class="nav">
-        <ul>
+        <input id="menu-hamburguer" type="checkbox" style="display: none;"/>
+        <label for="menu-hamburguer">
+            <img src="img/hamburguer64.png" alt="menu" class="menu_on">
+        </label>  
+        <div class="fundo_menu">
+            <label for="menu-hamburguer">
+                <img src="img/hamburguer64.png" alt="menu" class="menu_on menu_de_dentro">
+            </label>    
+            <ul class="menu_mobile">
+                <hr class="menu_hr">
+                <li><a href="index.amp.html">Início</a></li><hr class="menu_hr">
+                <li><a href="produtos.amp.html">Produtos</a></li><hr class="menu_hr">
+                <li><a href="sobre.amp.html">Sobre Nós</a></li><hr class="menu_hr">
+                <li><a href="contato.amp.html">Contato</a></li><hr class="menu_hr"> 
+            </ul>
+        </div>
+        <ul class="menu-desk">
             <li><a href="index.amp.html">Início</a></li>
             <li><a href="produtos.amp.html">Produtos</a></li>
             <li><a href="sobre.amp.html">Sobre Nós</a></li>
@@ -282,7 +422,7 @@
         
         <h2 id="titulo2" style="text-shadow: #ff243e3a 2px 2px;font-size: 46px;padding-top: 34px;padding-bottom: 5%;color: #ef233c;text-align: center;">Conheça nossos produtos!</h2>
         <div class="prod1">
-            <div class="produto" style="margin-right: 10%;">
+            <div class="produto produto1">
                 <h3 class="title-prod">Coxinha</h3>
                 <amp-img src="img/coxinha_prod.jpg"
                 class="img_prod"
@@ -306,7 +446,7 @@
             </div>
         </div>
         <div class="prod2">
-            <div class="produto" style="margin-right: 10%;">
+            <div class="produto produto1">
                 <h3 class="title-prod">Croquete de Carne</h3>
                 <amp-img src="img/croquete_prod.jpg"
                 class="img_prod"
