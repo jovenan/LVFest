@@ -3,22 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
+    <meta name="description" content="Conheça a história por trás de tanto amor e carinho pelos salgados e bolos da LVFest Sorocaba. Clique e Confira!">
     <meta property="og:locale" content="pt_BR">
     <meta property="og:url" content="">
-    <meta property="og:title" content="">
+    <meta property="og:title" content="Conheça melhor sobre nós | LV Fest">
     <meta property="og:site_name" content="LVFest">
-    <meta property="og:description" content="">
-    <meta property="og:image" content="">
+    <meta property="og:description" content="Conheça a história por trás de tanto amor e carinho pelos salgados e bolos da LVFest Sorocaba. Clique e Confira!">
+    <meta property="og:image" content="img/docinhos.jpg">
     <meta property="og:image:type" content="image/jpeg">
-    <meta property="og:image:width" content="800"> 
-    <meta property="og:image:height" content="600"> 
+    <meta property="og:image:width" content="200"> 
+    <meta property="og:image:height" content="200"> 
     <meta property="og:type" content="website">
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:description" content="" />
-    <meta name="twitter:title" content="" />
+    <meta name="twitter:description" content="Conheça a história por trás de tanto amor e carinho pelos salgados e bolos da LVFest Sorocaba. Clique e Confira!" />
+    <meta name="twitter:title" content="Conheça melhor sobre nós | LV Fest" />
     <meta name="twitter:site" content="@LVFest" />
-    <meta name="twitter:image" content="" />
+    <meta name="twitter:image" content="img/docinhos.jpg" />
     <meta name="twitter:creator" content="@Jonatas Venancio" />
     <link rel="canonical" href="sobre.amp.html">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -28,7 +28,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Galada&display=swap" rel="stylesheet">
     <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
     <script async src="https://cdn.ampproject.org/v0.js"></script>
-    <title>Sobre Nós | LV Fest</title>
+    <title>Conheça melhor sobre nós | LV Fest</title>
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <style amp-custom>
         * {
@@ -181,12 +181,13 @@
             }
             .nav {
                 margin-top: 10px;
-                
+                padding-bottom: 100px;
             }
             .menu_on {
                 display: block !important;
-                padding-left: 10%;
-                z-index: 6;
+                margin-left: 10%;
+                z-index: 8;
+                position: fixed;
             }
             .nav ul {
                 margin-right:0;
@@ -208,7 +209,9 @@
         .fundo_menu{
             border-right: solid 1px #969696;
             background-color:#edf2f4;
+            padding-top: 100px;
             padding-bottom: 100%;
+            height: 100%;
             display: none;
             position: fixed;
             z-index: 2;
@@ -233,9 +236,16 @@
             }
             #logo {
                 margin-left: 50%;
+                margin-top: -50px;
+            }
+        }
+        @media screen and (max-width: 900px) {
+            #logo {
+                margin-top: -50px;
             }
         }
         @media screen and (max-width: 1025px) {
+            
             #texto {
                 font-size: 20px;
             }
@@ -273,12 +283,9 @@
     <div class="nav">
         <input id="menu-hamburguer" type="checkbox" style="display: none;"/>
         <label for="menu-hamburguer">
-            <amp-img width="48" height="48"  src="img/hamburguer64.png" alt="menu" class="menu_on">
+            <amp-img width="48" height="48"  src="img/hamburguer64.png" alt="menu" title="menu" class="menu_on">
         </label>  
-        <div class="fundo_menu">
-            <label for="menu-hamburguer">
-                <amp-img width="48" height="48"  src="img/hamburguer64.png" alt="menu" class="menu_on menu_de_dentro">
-            </label>    
+        <div class="fundo_menu"> 
             <ul class="menu_mobile">
                 <hr class="menu_hr">
                 <li><a href="index.amp.html">Início</a></li><hr class="menu_hr">
@@ -293,11 +300,11 @@
             <li><a href="sobre.amp.html">Sobre Nós</a></li>
             <li><a href="contato.amp.html" class="contato">Contato</a></li>
         </ul>
-        <a href="index.amp.html"><amp-img width="150" height="141" src="img/logo_sf.png"  id='logo'></a>
+        <a href="index.amp.html"><amp-img width="150" height="141" src="img/logo_sf.png" alt="logo" title="logo" id='logo'></a>
     </div>
     <div class="sobre">
         <div class="duplo">
-            <amp-img class="coxinhinha" src="img/desenho_coxinha_sf.png" width="340" height="340" alt="Desenho de uma Coxinha"></amp-img>
+            <amp-img class="coxinhinha" src="img/desenho_coxinha_sf.png" width="340" height="340" alt="Desenho de uma Coxinha" title="Desenho de uma Coxinha"></amp-img>
             <div class="segundoq">
                 <h1 class="titulosobre">Sobre Nós</h1>
                 <hr>
@@ -307,7 +314,7 @@
     </div>
     <div class="dvcontato">
         <div id="texto2">
-            <amp-img width="128" height="128" alt="Icone ligar" src="img/ligar.png"></amp-img>
+            <amp-img width="128" height="128" alt="Icone ligar" title="Icone ligar" src="img/ligar.png"></amp-img>
             <h2 id="titulo2" style="font-size: 46px;padding-top: 34px;color: #ef233c;text-shadow: #ff243e3a 2px 2px;">Faça já a sua Encomenda!</h2>
             <p id="texto">Entre em Contato através de nossos<br> meios de Comunicação e faça já seu pedido!</p>
             <p class="btnsobre" id="btnprod"><a href="contato.amp.html">Entre em Contato!</a></p>
@@ -317,8 +324,8 @@
         <p>Todos direitos Reservados | &copy; LV Fest</p>
         <div style="display: flex;">
             <p style="padding-left: 200px;">Siga-nos em nossas redes sociais: </p>
-            <a href="https://www.facebook.com/lvfestbuffet" target="_blank"><amp-img class="icon_face" height="48" width="48" alt="Facebook" src="img/Facebook.ico"></amp-img></a>
-            <a href="https://www.instagram.com/lvfest.salgados/" target="_blank"><amp-img class="icon_insta" src="img/Instagram.ico" width="30" height="30" alt="Instagram"></amp-img></a>      
+            <a href="https://www.facebook.com/lvfestbuffet" target="_blank"><amp-img class="icon_face" height="48" width="48" alt="Facebook" title="Facebook" src="img/Facebook.ico"></amp-img></a>
+            <a href="https://www.instagram.com/lvfest.salgados/" target="_blank"><amp-img class="icon_insta" src="img/Instagram.ico" width="30" height="30" alt="Instagram" title="Instagram"></amp-img></a>      
         </div>
     </div>
     <amp-social-share 
