@@ -351,7 +351,7 @@
             <h1 class="tituloSolicite">Solicite seu Orçamento</h1>
             <form method="post"
               action-xhr="contato.php"
-              target="_top">
+              >
               <fieldset>
                 <p>
                     <label>
@@ -389,6 +389,16 @@
                   class="botaobtn"
                   value="Enviar">
               </fieldset>
+              <div submit-success>
+                <template type="amp-mustache">
+                    Encomenda enviada!
+                </template>
+              </div>
+              <div submit-error>
+                <template type="amp-mustache">
+                    Email não enviado verifique os dados ou entre em contato pelo Whatsapp!
+                </template>
+              </div>
             </form>
         </div>
         <div class="">
