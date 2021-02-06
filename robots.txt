@@ -7,4 +7,4 @@ Disallow:
 User-agent: Googlebot-image
 Disallow:
 
-Sitemap: URL do sitemap
+Sitemap: https://lvfest.com.br/sitemap.xml
