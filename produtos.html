@@ -29,6 +29,9 @@
     <title>Conheça nosso deliciosos Salgados | LV Fest</title>
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <style amp-custom>
+        html {
+            scroll-behavior: smooth;
+        }
         @font-face {
             font-family: "raleway";
             src: url("fonts/Raleway-Regular.ttf");
@@ -99,7 +102,7 @@
             position: fixed;
             z-index: 999999;
             right: 20px;
-            bottom: 20px;
+            bottom: 100px;
             border-radius: 100%;  
             box-shadow: 3px 3px 1px rgb(31, 31, 31);
         }
@@ -260,6 +263,15 @@
         .produto1 {
             margin-right:3%
         }
+        .back-to-top {
+            position: fixed;
+            z-index: 999999;
+            right: 20px;
+            bottom: 20px;
+            border-radius: 10%;  
+            background-color: rgb(31 31 31 / 55%);
+            padding: 6px;
+        }
         @media screen and (max-width: 600px) { 
             .rodape div p{
                 padding-left: 0 !important;
@@ -319,14 +331,18 @@
             }
             .whatsapp {
                 right: 20px;
-                bottom: 80px;   
+                bottom: 150px;   
             }
-            
+            .back-to-top {
+                bottom: 80px;
+                padding: 5px;
+            }
         }
+        
     </style>
 </head>
 <body>
-    <div class="nav">
+    <div class="nav" id="inicio">
         <input id="menu-hamburguer" type="checkbox" style="display: none;"/>
         <label for="menu-hamburguer">
             <amp-img width="48" height="48"  src="img/hamburguer64.png" alt="menu" title="menu" class="menu_on">
@@ -402,7 +418,7 @@
                 <p class="preco_prod"><strong>R$40,00</strong> cto</p>
             </div>
         </div>
-        <div class="prod2" style="margin-left: -2%;">
+        <div class="prod2">
             <div class="produto produto1">
                 <h3 class="title-prod">Esfihas de Carne,<br> Frango e Calabresa</h3>
                 <amp-img src="img/esfiha.webp"
@@ -412,7 +428,7 @@
                 alt="Esfihas"
                 title="Esfihas">
                 </amp-img>
-                <p class="desc_prod">Nossas deliciosas esfihinhas com um frescor,<br> qualidade e uma massa fofinha e sabor imbativel. </p>
+                <p class="desc_prod">Nossas deliciosas esfihinhas com qualidade<br>  e sabor imbativel. </p>
                 <p class="preco_prod"><strong>R$45,00</strong> cto</p>
             </div>
             <div class="produto">
@@ -424,7 +440,7 @@
                 alt="Docinhos"
                 title="Docinhos">
                 </amp-img>
-                <p class="desc_prod">Docinhos de qualidade <br> Brigadeiros, Beijinhos e Cajuzinhos.</p>
+                <p class="desc_prod">Docinhos de qualidade feitos com amor, e muito carinho <br> Brigadeiros, Beijinhos e Cajuzinhos.</p>
                 <p class="preco_prod"><strong>R$60,00</strong> cto</p>
             </div>
         </div>
@@ -485,5 +501,8 @@
     data-param-text="Olá, tudo bem?, vi seu site e gostaria de fazer uma encomenda!"
     >
     </amp-social-share>
+    <a href="#inicio"><div class="back-to-top">
+         <amp-img class="" height="45" width="45" alt="seta para cima" title="seta para cima" src="img/icone-seta-cima.ico">
+    </div></a>
 </body>
 </html>

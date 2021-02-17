@@ -31,6 +31,9 @@
     <script async custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-0.2.js"></script>
     <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
     <style amp-custom>
+        html {
+            scroll-behavior: smooth;
+        }
         @font-face {
             font-family: "raleway";
             src: url("fonts/Raleway-Regular.ttf");
@@ -276,6 +279,9 @@
         .menu_hr {
             margin-bottom: 10px;
         }
+        .back-to-top {
+            display: none;
+        }
         @media screen and (max-width: 600px) { 
             .rodape div p{
                 padding-left: 0 !important;
@@ -306,7 +312,17 @@
             }
             .whatsapp {
                 right: 20px;
-                bottom: 80px;   
+                bottom: 150px;   
+            }
+            .back-to-top {
+                display: block;
+                bottom: 80px;
+                padding: 5px;
+                position: fixed;
+                z-index: 999999;
+                right: 20px;
+                border-radius: 10%;  
+                background-color: rgb(31 31 31 / 55%);
             }
             .dvcontato {
                 display: block;
@@ -329,7 +345,7 @@
     </style>
 </head>
 <body>
-    <div class="nav">
+    <div class="nav" id="inicio">
         <input id="menu-hamburguer" type="checkbox" style="display: none;"/>
         <label for="menu-hamburguer">
             <amp-img width="48" height="48"  src="img/hamburguer64.png" alt="menu" title="menu" class="menu_on">
@@ -385,5 +401,8 @@
     data-param-text="Olá, tudo bem?, vi seu site e gostaria de fazer uma encomenda!"
     >
     </amp-social-share>
+    <a href="#inicio"><div class="back-to-top">
+        <amp-img class="" height="45" width="45" alt="seta para cima" title="seta para cima" src="img/icone-seta-cima.ico">
+   </div></a>
 </body>
 </html>

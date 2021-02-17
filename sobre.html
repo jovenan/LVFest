@@ -29,6 +29,9 @@
     <title>Conheça melhor sobre nós | LV Fest</title>
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <style amp-custom>
+        html {
+            scroll-behavior: smooth;
+        }
         @font-face {
             font-family: "raleway";
             src: url("fonts/Raleway-Regular.ttf");
@@ -99,7 +102,7 @@
             position: fixed;
             z-index: 999999;
             right: 20px;
-            bottom: 20px;
+            bottom: 100px;
             border-radius: 100%;  
             box-shadow: 3px 3px 1px rgb(31, 31, 31);
         }
@@ -236,6 +239,15 @@
         .menu_hr {
             margin-bottom: 10px;
         }
+        .back-to-top {
+            position: fixed;
+            z-index: 999999;
+            right: 20px;
+            bottom: 20px;
+            border-radius: 10%;  
+            background-color: rgb(31 31 31 / 55%);
+            padding: 6px;
+        }
         @media screen and (max-width: 600px) { 
             .rodape div p{
                 padding-left: 0 !important;
@@ -274,7 +286,11 @@
             }
             .whatsapp {
                 right: 20px;
-                bottom: 80px;   
+                bottom: 150px;   
+            }
+            .back-to-top {
+                bottom: 80px;
+                padding: 5px;
             }
             .duplo {
                 display: block;
@@ -290,7 +306,7 @@
     </style>
 </head>
 <body>
-    <div class="nav">
+    <div class="nav" id="inicio">
         <input id="menu-hamburguer" type="checkbox" style="display: none;"/>
         <label for="menu-hamburguer">
             <amp-img width="48" height="48"  src="img/hamburguer64.png" alt="menu" title="menu" class="menu_on">
@@ -358,5 +374,8 @@
     data-param-text="Olá, tudo bem?, vi seu site e gostaria de fazer uma encomenda!"
     >
     </amp-social-share>
+    <a href="#inicio"><div class="back-to-top">
+        <amp-img class="" height="45" width="45" alt="seta para cima" title="seta para cima" src="img/icone-seta-cima.ico">
+   </div></a>
 </body>
 </html>
