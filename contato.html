@@ -224,6 +224,9 @@
             font-weight: 500;
             box-shadow: black 1px 2px;
         }
+        .menu_on {
+            display: none;
+        }
         @media screen and (max-width: 900px) {
             .menu-desk {
                 display: none;
@@ -233,7 +236,7 @@
                 padding-bottom: 100px;
             }
             .menu_on {
-                display: block !important;
+                display: block;
                 margin-left: 10%;
                 z-index: 6;
                 position: fixed;
@@ -252,7 +255,7 @@
         }
         
         .menu_mobile li {
-            padding-right: 13px !important;
+            padding-right: 13px;
             padding-bottom: 15px;
         }
         .fundo_menu{
@@ -269,9 +272,7 @@
         #menu-hamburguer:checked ~ .fundo_menu {
             display: block;
         }
-        .menu_on {
-            display: none;
-        }
+        
         .menu_de_dentro {
             padding-top:60px ;
             padding-left: 45px;
@@ -282,9 +283,12 @@
         .back-to-top {
             display: none;
         }
+        .siganos {
+            padding-left: 200px;
+        }
         @media screen and (max-width: 600px) { 
             .rodape div p{
-                padding-left: 0 !important;
+                padding-left: 0;
             }
             #logo {
                 margin-left: 50%;
@@ -304,7 +308,7 @@
                 font-size: 20px;
             }
             .rodape {
-                padding-left: 2% !important;
+                padding-left: 2%;
                 display: block;
             }
             .rodape div{
@@ -386,7 +390,7 @@
     <div class="rodape">
         <p>Todos direitos Reservados | &copy; LV Fest</p>
         <div style="display: flex;">
-            <p style="padding-left: 200px;">Siga-nos em nossas redes sociais: </p>
+            <p class="siganos">Siga-nos em nossas redes sociais: </p>
             <a href="https://www.facebook.com/lvfestbuffet" target="_blank"><amp-img class="icon_face" height="48" width="48" alt="Facebook" title="Facebook" src="img/Facebook.ico"></amp-img></a>
             <a href="https://www.instagram.com/lvfest.salgados/" target="_blank"><amp-img class="icon_insta" src="img/Instagram.ico" width="30" height="30" alt="Instagram" title="Instagram"></amp-img></a>      
         </div>

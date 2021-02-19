@@ -178,11 +178,17 @@
         .segundoq {
             padding-left: 3%;
         }
-        hr {
+        .barra-titulos {
             margin-left: 25%;
             margin-right: 25%;
             margin-top: 3%;
             margin-bottom: 3%;
+        }
+        .menu_on {
+            display: none;
+        }
+        .siganos {
+            padding-left: 200px;
         }
         @media screen and (max-width: 900px) {
             .menu-desk {
@@ -193,7 +199,7 @@
                 padding-bottom: 100px;
             }
             .menu_on {
-                display: block !important;
+                display: block;
                 margin-left: 10%;
                 z-index: 8;
                 position: fixed;
@@ -212,7 +218,7 @@
         }
         
         .menu_mobile li {
-            padding-right: 13px !important;
+            padding-right: 13px;
             padding-bottom: 15px;
         }
         .fundo_menu{
@@ -229,9 +235,7 @@
         #menu-hamburguer:checked ~ .fundo_menu {
             display: block;
         }
-        .menu_on {
-            display: none;
-        }
+        
         .menu_de_dentro {
             padding-top:60px ;
             padding-left: 45px;
@@ -250,7 +254,7 @@
         }
         @media screen and (max-width: 600px) { 
             .rodape div p{
-                padding-left: 0 !important;
+                padding-left: 0;
             }
             #logo {
                 margin-left: 50%;
@@ -278,7 +282,7 @@
                 padding-left: 0;
             }
             .rodape {
-                padding-left: 2% !important;
+                padding-left: 2%;
                 display: block;
             }
             .rodape div{
@@ -332,7 +336,7 @@
         <div class="duplo">
             <div class="segundoq">
                 <h1 class="titulosobre">Sobre Nós</h1>
-                <hr>
+                <hr class="barra-titulos">
                 <p class="texto1">LV Fest é uma empresa familiar que preza pelo cuidado no que faz.
                     Fundada em 2000, com inspiração nas receitas de família, oferecemos dedicação total na qualidade para nossos consumidores. Para tornar os seus momentos especiais e saborosos, fazemos salgados com qualidade e usamos sempre matéria prima de alta qualidade.</p>
                 <p class="texto1">Nosso serviço foi feito pensando em você, que adora se reunir com amigos e família para aproveitar comida de qualidade. Para tornar essas ocasiões ainda mais especiais, o LV Fest permite que vocês possam escolher entre nossos salgados e esfihas quentinhos ou até mesmo congelados.</p>
@@ -343,7 +347,7 @@
         </div>
         <div class="segundoq">
             <h1 class="titulosobre">Nossa Missão</h1>
-            <hr>
+            <hr class="barra-titulos">
             <p class="texto1">Oferecer para nossos clientes produtos com o menor preço e qualidade, onde possam ter orgulho em fazer sua festa, comemoração, reunião, ou até mesmo um lanche da tarde, e que tenham a certeza que estarão oferecendo um produto de primeira qualidade para seus convidados.</p>
             <p class="texto1">Temos sistema de produção automatizada para melhor qualidade de nossos produtos, evitando o contato manual dos ingredientes o qual proporciona qualidade dos produtos produzidos e seguindo as normas padrão da vigilância sanitária.</p>
         </div>
@@ -359,7 +363,7 @@
     <div class="rodape">
         <p>Todos direitos Reservados | &copy; LV Fest</p>
         <div style="display: flex;">
-            <p style="padding-left: 200px;">Siga-nos em nossas redes sociais: </p>
+            <p class="siganos">Siga-nos em nossas redes sociais: </p>
             <a href="https://www.facebook.com/lvfestbuffet" target="_blank"><amp-img class="icon_face" height="48" width="48" alt="Facebook" title="Facebook" src="img/Facebook.ico"></amp-img></a>
             <a href="https://www.instagram.com/lvfest.salgados/" target="_blank"><amp-img class="icon_insta" src="img/Instagram.ico" width="30" height="30" alt="Instagram" title="Instagram"></amp-img></a>      
         </div>
